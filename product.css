@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* navbar altı */
+  .filters {
+    background: fixed;
+    background-color: #000;
+    margin-top: 120px;
+    padding: 18px;
+  }  
+  
+  .filters ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .filters ul li {
+    margin-right: 10px;
+  }
+  
+  .filters ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .filters ul li a:hover {
+    color: #d3b969;
+  }
+  
+.filters ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filters ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .filters ul li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #333; 
+    border-radius: 5px;
+    color: #ccc; 
+    transition: background-color 0.3s;
+  }
+  
+  .filters ul li a:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  /* ürünler */
+
+  body {
+    display: grid;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 20px;
+  }
+  
+  .product-info h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  
+  .product-info p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card {
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 20px;
+  }
+  
+  .product-info h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  
+  .product-info p {
+    margin: 0;
+    font-size: 18px;
+  }
+  

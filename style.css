@@ -1,0 +1,463 @@
+*
+body {
+  background-color: #e0e0e0;
+  font-family: Segoe UI;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Photos a:hover img,
+.Photos a:hover div 
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+hr {
+  width: 90;
+}
+
+.item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* navbar */
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 4%;
+
+}
+.logo img{
+  max-width: 100px;
+  height: 100px;
+
+}
+
+.navmenu{
+  display: flex;
+}
+
+.navmenu a{
+  color: #2c2c2c;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+   font-weight: 300;
+  transition: all .42s ease;
+}
+.navmenu a:hover{
+  color: crimson;
+}
+.nav-icon{
+  display: flex;
+  align-items: center;
+}
+.nav-icon i{
+  margin-right: 20px;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+.nav-icon i:hover{
+ transform: scale(1.1);
+ color: #ac6472;
+}
+
+#menu-icon{
+  font-size: 35px;
+  color: #2c2c2c;
+  z-index: 10001;
+  cursor: pointer;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 120px;
+  list-style-type: none;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.submenu li a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* navbardan sonraki resim*/
+
+  section{
+    padding: 5% 10%;
+}
+
+.main-home {
+  width: 100%;
+  height: 900px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: center;
+}
+
+.main-text h5{
+    color: #ac6472;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-text h1{
+    color: #ffffff;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-btn{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.main-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.main-btn i{
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 5%;
+}
+
+.down i{
+    font-size: 30px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover{
+    background-color: #ac6472;
+    color: #fff;
+    transition: all .42s ease;
+}
+
+header.sticky{
+  background: #fff;
+  padding: 20px 10%;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0 / 10%);
+}
+
+/* 6'lı resim bölümü */
+.item:hover {
+  transform: scale(1.1);
+}
+
+body {
+  font-family: 'Segoe UI';
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start; 
+  max-width: 1200px;
+  margin: 20px auto;
+  
+}
+
+.item {
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.item p {
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+
+/* indirim bölümü */
+
+.promotions {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Segoe UI';
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.promotions h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.promotions h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.promotions .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.promotions .btn:hover {
+  background-color: #1e1919;
+}
+
+/* get a look bölümü */
+
+.look-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.centered-title {
+  text-align: center;
+  width: 100%;
+  
+}
+
+.centered-title .btn{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.centered-title  .btn:hover {
+  background-color: #ffffff;
+}
+
+.look {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.look img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.look-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.look-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.look-info h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+/* abonelik */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.container .content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.unsubscribe {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* içerik bilgileri/en alt kısım*/
+
+body {
+  font-family: Segoe UI;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: Segoe UI;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links ul li a,
+.footer-info p a {
+  text-decoration: none;
+  color: black;
+}
+
+.help-section {
+  flex: 1 1 250px;
+  margin-right: 20px;
+}
+
+.help-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.help-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.help-section ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-right: 20px;
+}
+
+.footer-info {
+  text-align: right;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+</head>
+<body>
+
+<!-- navbar -->
+<header style="background-color: #ffffff;">
+    <a href="first.html" class="logo"><img src="images/logo.png" /></a>
+  
+    <ul class="navmenu">
+      <li>
+        <a href="women.html">WOMEN</a>
+        <ul class="submenu">
+          <li><a href="#">Dress</a></li>
+          <li><a href="#">Jeans</a></li>
+          <li><a href="#">Top and Bodysuits</a></li>
+          <li><a href="#">Trousers</a></li>
+          <li><a href="#">T-shirts</a></li>
+          <li><a href="#">Shorts</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="men.html">MEN</a>
+        <ul class="submenu">
+          <li><a href="#">T-shirts</a></li>
+          <li><a href="#">Jeans</a></li>
+          <li><a href="#">Sweatshirts & Hoodies</a></li>
+          <li><a href="#">Shirts</a></li>
+          <li><a href="#">Shorts</a></li>
+          <li><a href="#">Swimwear</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="teen.html">TEEN</a>
+        <ul class="submenu">
+          <li><a href="#">T-shirts and Tops</a></li>
+          <li><a href="#">Jeans</a></li>
+          <li><a href="#">Dresses and Jumpsuits</a></li>
+          <li><a href="#">Trousers and cargo trousers</a></li>
+          <li><a href="#">Skirts and Shorts</a></li>
+          <li><a href="#">Shoes</a></li>
+        </ul>
+      </li>
+    </ul>
+  
+    <div class="nav-icon">
+      <a href="#"><i class="bx bx-search" ></i></a>
+      <a href="user.html"><i class="bx bx-user"></i></a>
+      <a href="basket.html"><i class="bx bx-cart"></i></a>
+  
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+  <!-- fav bölümü -->
+<div class="login-form">
+    <a href="#" style="display: block; text-align: center;">
+        <img src="images/fav.png" style="width: 150px; height: auto;">
+    </a>        
+    <h2>You don’t have any favourites</h2>
+    <div class="form-group">
+        <a class="discover" style="font-size: 18px;">Did you know we update our collection every week?</a>
+    </div>
+</div>
+
+
+<script>
+  //menüyü açma ve kapama 
+  document.querySelectorAll('.navmenu li').forEach(item => {
+    item.addEventListener('mouseenter', function() {
+      const submenu = this.querySelector('.submenu');
+      if (submenu) {
+        submenu.style.display = 'block';
+      }
+    });
+    item.addEventListener('mouseleave', function() {
+      const submenu = this.querySelector('.submenu');
+      if (submenu) {
+        submenu.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
